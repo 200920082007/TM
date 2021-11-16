@@ -34,3 +34,9 @@
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
+
+```
+<code>{file_name}</code>
+<b>🤭 All Movies Here 
+👉[@SonalModdingGod](https://t.me/SonalModdingGod)</b>
+```
