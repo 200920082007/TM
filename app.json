@@ -20,19 +20,23 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
-            "required": true
+            "required": true,
+            "value": "2113558433:AAFAM-p2glznOe47wh44uvv-D-mzMVJHLR8"
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "required": true
+            "required": true,
+            "value": "8495910"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "required": true
+            "required": true,
+            "value": "72a04a96bb1eb81fd9c8e80b5c6eb779"
         },
         "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "required": false
+            "description": "Username or ID of channel or group. Of Database, Separate multiple IDs by space.",
+            "required": false,
+            "value": "-1001444993900"
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
