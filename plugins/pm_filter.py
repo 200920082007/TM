@@ -162,8 +162,8 @@ async def advantage_spoll_choker(bot, query):
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase')
-        await asyncio.sleep(10)
+        k = await query.message.edit('👏 𝙃𝙚𝙡𝙡𝙤\n\n𝐒𝐨𝐫𝐫𝐲,\n𝐓𝐡𝐢𝐬 𝐌𝐨𝐯𝐢𝐞 𝐍𝐨𝐭 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 𝐎𝐰𝐧𝐞𝐫\n𝙋𝙡𝙚𝙖𝙨𝙚 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 𝙏𝙤 𝙊𝙬𝙣𝙚𝙧')
+        await asyncio.sleep(20)
         await k.delete()
 
 
@@ -230,10 +230,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
         group_id = query.data.split(":")[1]
-        
-        act = query.data.split(":")[2]
-        hr = await client.get_chat(int(group_id))
-        title = hr.title
+        title = query.data.split(":")[2]
+        act = query.data.split(":")[3]
         user_id = query.from_user.id
 
         if act == "":
@@ -244,7 +242,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             cb = "disconnect"
 
         keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
+            [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}:{title}"),
                 InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
             [InlineKeyboardButton("BACK", callback_data="backcb")]
         ])
@@ -260,11 +258,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
         group_id = query.data.split(":")[1]
-
-        hr = await client.get_chat(int(group_id))
-
-        title = hr.title
-
+        title = query.data.split(":")[2]
         user_id = query.from_user.id
 
         mkact = await make_active(str(user_id), str(group_id))
@@ -277,15 +271,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.message.edit_text('Some error occured!!', parse_mode="md")
         return
-
     elif "disconnect" in query.data:
         await query.answer()
 
-        group_id = query.data.split(":")[1]
-
-        hr = await client.get_chat(int(group_id))
-
-        title = hr.title
+        title = query.data.split(":")[2]
         user_id = query.from_user.id
 
         mkinact = await make_inactive(str(user_id))
@@ -296,10 +285,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode="md"
             )
         else:
-            await query.message.edit_text(
-                f"Some error occured!!",
-                parse_mode="md"
-            )
+            await query.message.edit_text('Some error occured!!', parse_mode="md")
         return
     elif "deletecb" in query.data:
         await query.answer()
@@ -314,10 +300,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 "Successfully deleted connection"
             )
         else:
-            await query.message.edit_text(
-                f"Some error occured!!",
-                parse_mode="md"
-            )
+            await query.message.edit_text('Some error occured!!', parse_mode="md")
         return
     elif query.data == "backcb":
         await query.answer()
@@ -340,7 +323,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons.append(
                     [
                         InlineKeyboardButton(
-                            text=f"{title}{act}", callback_data=f"groupcb:{groupid}:{act}"
+                            text=f"{title}{act}", callback_data=f"groupcb:{groupid}:{title}:{act}"
                         )
                     ]
                 )
@@ -675,7 +658,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"✨ {search} 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐘 @SonalModdingGod ✨ 𝐅𝐨𝐮𝐧𝐝𝐞𝐝 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 🤗"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -693,14 +676,14 @@ async def auto_filter(client, msg, spoll=False):
         
 
 async def advantage_spell_chok(msg):
-    query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)", "", msg.text, flags=re.IGNORECASE) # plis contribute some common words 
+    query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e)?(l)*(o)*|mal(ayalam)?|tamil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle)", "", msg.text, flags=re.IGNORECASE) # plis contribute some common words 
     query = query.strip() + " movie"
     g_s = await search_gagala(query)
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
         k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        await asyncio.sleep(20)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE) # look for imdb / wiki results
@@ -725,8 +708,8 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(8)
+        k = await msg.reply("👏 𝙃𝙚𝙡𝙡𝙤\n\n𝐒𝐨𝐫𝐫𝐲, 𝐍𝐨 𝐌𝐨𝐯𝐢𝐞/𝐒𝐞𝐫𝐢𝐞𝐬\n𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐞 𝐆𝐢𝐯𝐞𝐧 𝐖𝐨𝐫𝐝 𝐖𝐚𝐬 𝐅𝐨𝐮𝐧𝐝 🥺\n𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔\n⭕️ 𝐍𝐨𝐭 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐝 𝐘𝐞𝐭\n⭕️ 𝐈𝐧𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠\n⭕ 𝐍𝐨𝐭 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐁𝐲 𝐎𝐰𝐧𝐞𝐫.")
+        await asyncio.sleep(20)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
@@ -737,7 +720,7 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    await msg.reply("𝙄 𝘾𝙤𝙪𝙡𝙙𝙣'𝙩 𝙁𝙞𝙣𝙙 𝘼𝙣𝙮𝙩𝙝𝙞𝙣𝙜 𝙍𝙚𝙡𝙖𝙩𝙚𝙙 𝙏𝙤 𝙏𝙝𝙖𝙩😌\n𝘿𝙞𝙙 𝙔𝙤𝙪 𝙈𝙚𝙖𝙣 𝘼𝙣𝙮 𝙊𝙣𝙚 𝙤𝙛 𝙏𝙝𝙚𝙨𝙚🤔?", reply_markup=InlineKeyboardMarkup(btn))
     
 
 
