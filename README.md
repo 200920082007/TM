@@ -37,6 +37,13 @@
 
 ```
 <code>{file_name}</code>
-<b>🤭 All Movies Here 
-👉[@SonalModdingGod](https://t.me/SonalModdingGod)</b>
+🤭 𝗔𝗟𝗟 𝗠𝗢𝗩𝗜𝗘𝗦 𝗛𝗘𝗥𝗘 🥱
+
+<a href="http://t.me/RYMOFFICIAL">1☞𝙅𝙤𝙞𝙣 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝘾𝙝𝙖𝙣𝙣𝙚𝙡</a>
+
+<a href="http://t.me/SonalModdingGod">2☞ 𝙅𝙤𝙞𝙣 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥</a>
+
+<a href="https://t.me/JaiHindChatting">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
+
+<a href="https://t.me/THEDRAGONV6">4☞ 𝙅𝙤𝙞𝙣 𝙁𝙚𝙙 𝙂𝙧𝙤𝙪𝙥</a>
 ```
