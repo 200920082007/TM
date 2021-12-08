@@ -42,7 +42,16 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
+CUSTOM_FILE_CAPTION = environ.get("<code>{file_name}</code>
+🤭 𝗔𝗟𝗟 𝗠𝗢𝗩𝗜𝗘𝗦 𝗛𝗘𝗥𝗘 🥱
+
+<a href="http://t.me/RYMOFFICIAL">1☞ 𝙅𝙤𝙞𝙣 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝘾𝙝𝙖𝙣𝙣𝙚𝙡</a>
+
+<a href="http://t.me/SonalModdingGod">2☞ 𝙅𝙤𝙞𝙣 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥</a>
+
+<a href="https://t.me/JaiHindChatting">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
+
+<a href="https://t.me/THEDRAGONV6">4☞ 𝙅𝙤𝙞𝙣 𝙁𝙚𝙙 𝙂𝙧𝙤𝙪𝙥</a>", None)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
