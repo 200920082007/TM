@@ -363,7 +363,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 print(e)
             f_caption=f_caption
         if f_caption is None:
-            f_caption = f"<code>{file_name}</code>
+            f_caption = f"{<code>{file_name}</code>
 🤭 𝗔𝗟𝗟 𝗠𝗢𝗩𝗜𝗘𝗦 𝗛𝗘𝗥𝗘 🥱
 
 <a href="http://t.me/RYMOFFICIAL">1☞ 𝙅𝙤𝙞𝙣 𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡 𝘾𝙝𝙖𝙣𝙣𝙚𝙡</a>
@@ -372,7 +372,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 <a href="https://t.me/JaiHindChatting">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
 
-<a href="https://t.me/THEDRAGONV6">4☞ 𝙅𝙤𝙞𝙣 𝙁𝙚𝙙 𝙂𝙧𝙤𝙪𝙥</a>"
+<a href="https://t.me/THEDRAGONV6">4☞ 𝙅𝙤𝙞𝙣 𝙁𝙚𝙙 𝙂𝙧𝙤𝙪𝙥</a>}"
             
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
