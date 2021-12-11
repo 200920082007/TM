@@ -101,6 +101,16 @@
             "required": false,
             "value": "false"
         },
+        "BOT_USERNAME": {
+            "description": "enter Bot Username Without @",
+            "value": "TrishaLoveRobot"
+            "required": true
+        },
+        "UPSTREAM_REPO": {
+            "description": "Paste Your Forked Repo Url",
+            "value": "https://github.com/rakeshyt/TrishaFilter",
+            "required": false
+        },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/EvamariaTG/EvaMaria/issues/22",
             "required": false,
