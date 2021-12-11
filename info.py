@@ -1,5 +1,6 @@
 import re
 from os import environ
+from os import getenv
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -15,7 +16,7 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
-BOT_USERNAME = environ['BOT_USERNAME']
+BOT_USERNAME = getenv("BOT_USERNAME")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
