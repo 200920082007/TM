@@ -630,7 +630,8 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")],
+            [InlineKeyboardButton(text="CANCEL",callback_data="close_data")]
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
