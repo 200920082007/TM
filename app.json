@@ -108,7 +108,7 @@
         },
         "UPSTREAM_REPO": {
             "description": "Paste Your Forked Repo Url",
-            "value": "https://github.com/rakeshyt/TrishaFilter",
+            "value": "https://github.com/raniyt/TrishaEditedForVijay",
             "required": false
         },
         "SINGLE_BUTTON": {
