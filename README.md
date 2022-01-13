@@ -39,5 +39,5 @@
 
 <a href="https://t.me/technomindzchat">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
 
-<a href="https://t.me/SonalModdingGod">4☞ 𝙅𝙤𝙞𝙣 �Second Movie 𝙂𝙧𝙤𝙪𝙥</a>
+<a href="https://t.me/SonalModdingGod">4☞ 𝙅𝙤𝙞𝙣 2nd 𝙈𝙤𝙫𝙞𝙚𝙨 𝙂𝙧𝙤𝙪𝙥</a>
 ```
