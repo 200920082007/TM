@@ -457,8 +457,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🆘 Get Help', url='https://t.me/Technomindzchat'),
             InlineKeyboardButton('🌴 My Group', url='https://t.me/technomoviescollection')
             ],[
-            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/Technomindzchat'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('🧑‍💻 Developer', url='https://t.me/TechnomindzYt'),
+            InlineKeyboardButton('♥️ Source', url='https://t.me/Technomindzchat')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start')
         ]]
@@ -559,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("Refreshing...")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
             InlineKeyboardButton('♻️', callback_data='rfrsh')
@@ -665,7 +665,7 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"🤭 <STRONG>{search}</STRONG> 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 ♪ \n🔥@TechnoMoviesCollection🔥 \n 🔥@SonalModdingGod🔥 \n🔥𝐍𝐨𝐭𝐞:♪→𝗜𝗳 𝗬𝗼𝘂 𝗗𝗼𝗻'𝘁 𝗞𝗻𝗼𝘄 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝘁 𝗧𝗵𝗲𝗻 𝗧𝘆𝗽𝗲 #How 𝗜𝗻 𝗧𝗵𝗲 𝗚𝗿𝗼𝘂𝗽\n\n⚙️ Nᴏᴛᴇ:→𝗧𝗵𝗶𝘀 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗔𝘂𝘁𝗼-𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗔𝗳𝘁𝗲𝗿 2 𝗠𝗶𝗻𝘂𝘁𝗲 𝗧𝗼 𝗔𝘃𝗼𝗶𝗱 𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 𝗜𝘀𝘀𝘂𝗲𝘀."
+        cap = f"🤭 <STRONG>{search}</STRONG> 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 ♪ \n🔥@TechnoMoviesCollection🔥 \n🔥@SonalModdingGod🔥 \n🔥𝐍𝐨𝐭𝐞:♪→𝗜𝗳 𝗬𝗼𝘂 𝗗𝗼𝗻'𝘁 𝗞𝗻𝗼𝘄 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝘁 𝗧𝗵𝗲𝗻 𝗧𝘆𝗽𝗲 #How 𝗜𝗻 𝗧𝗵𝗲 𝗚𝗿𝗼𝘂𝗽\n\n⚙️ Nᴏᴛᴇ:→𝗧𝗵𝗶𝘀 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗔𝘂𝘁𝗼-𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗔𝗳𝘁𝗲𝗿 2 𝗠𝗶𝗻𝘂𝘁𝗲 𝗧𝗼 𝗔𝘃𝗼𝗶𝗱 𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 𝗜𝘀𝘀𝘂𝗲𝘀."
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
