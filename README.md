@@ -9,13 +9,17 @@
 </h1>
 <a href="https://www.youtube.com/c/TechnoMindz">
   <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-red?logo=youtube" width="150">
-  
-## Caution
-  
-IF YOU NEED ANY ASSISTANCE FEEL FREE TO CONTACT
-Contact [SUPPORT](https://t.me/technomindzchat)
-Contact [OWNER](https://t.me/technomindzyt)
 
+  
+
+
+
+## SUPPORT
+## IF YOU NEED ANY ASSISTANCE FEEL FREE TO CONTACT
+## YOUTUBE  [SUPPORT_CHANNEL](https://t.me/technomindzchat)
+## Contact [OWNER](https://t.me/technomindzyt)
+
+## DEPLOY
 
 <a href="https://heroku.com/deploy?template=https://github.com/Beast2005/TrishaEditedForVijay">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
@@ -75,8 +79,8 @@ Contact [OWNER](https://t.me/technomindzyt)
 <a href="https://t.me/technomindzchat">3☞ 𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙩𝙩𝙞𝙣𝙜 𝙂𝙧𝙤𝙪𝙥</a>
 
 ```
-## CREATOR
+## CREATED BY
  
-* [Ravinandan🇮🇳](https://t.me/TechnoMINDZYT)
+* [RAVINANDAN](https://t.me/TechnoMINDZYT)
 ## Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
