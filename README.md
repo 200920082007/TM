@@ -26,6 +26,7 @@
 <a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/TM_Private_Code">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/5efq9X?referralCode=dsdSeQ)
 
 ### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ🎑
 
