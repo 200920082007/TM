@@ -30,6 +30,7 @@ Deploy On Heroku
 
 Deploy On Railway
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/6wwbPR?referralCode=dsdSeQ)
 
 ### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ🎑
 
