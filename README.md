@@ -23,7 +23,7 @@
 
 ## DEPLOY
 
-<a href="https://heroku.com/deploy?template=https://github.com/Beast2005/TrishaEditedForVijay">
+<a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/TM_Private_Code">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
